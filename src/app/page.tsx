@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { colors } from "@/elements/color"
 import Navbar from "@/components/navbar";
+import TechCard from "@/components/techCard";
 
 export default function Home() {
   return (
@@ -34,37 +35,57 @@ export default function Home() {
         </div>
       </div>
       <div className="sectionWrapper">
-        <div className="flex gap-10">
-          <div className="flex flex-col gap-8 h-[200px] items-center">
-            <div className="h-50 w-auto relative">
+        <div className="relative h-[6rem] border-l-60" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
+          <span className="absolute title font-bold text-[5.5rem] -left-4.5 -top-0.5">Education</span>
+        </div>
+        <div className="flex gap-10 px-10 pt-10">
+          <div className="flex flex-col gap-8 items-center">
+            <div className="h-50 w-auto">
               <Image 
                 src='/logo/dupan.png'
                 alt='Logo of SMAN 28 Jakarta'
                 width={200}
                 height={200}
-                className="object-fill h-full w-auto"
+                className="object-contain h-full w-auto"
               ></Image>
             </div>
-            <div className="flex flex-col gap-2 content items-center">
+            <div className="flex flex-col gap-2 w-[11rem] content text-center">
               <span className="font-semibold text-center">SMAN 28 Jakarta</span>
               <span style={{ opacity: 0.7 }}>2020 - 2023</span>
             </div>
           </div>
-          <div className="flex flex-col gap-8 h-[200px] items-center w-[200px]">
-            <div className="h-50 w-auto relative">
+          <div id="connectLine" className="flex gap-0 h-50 items-center">
+            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: colors.primary }}></div>
+            <div className="w-12 h-0.5" style={{ backgroundColor: colors.primary }}></div>
+            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: colors.primary }}></div>
+          </div>
+          <div className="flex flex-col gap-8 items-center">
+            <div className="h-50 w-auto">
               <Image 
                 src='/logo/makaraUI.png'
                 alt='Logo of University of Indonesia'
                 width={1200}
                 height={1300}
-                className="object-fill h-full w-auto"
+                className="object-contain h-full w-auto"
               ></Image>
             </div>
-            <div className="flex flex-col gap-2 content items-center">
-              <div className="font-semibold text-center">Fakultas Ilmu Komputer, Universitas Indonesia</div>
+            <div className="flex flex-col gap-2 w-[11rem] content text-center">
+              <div className="font-semibold text-center">Faculty of Computer Science, University of Indonesia</div>
               <span style={{ opacity: 0.7 }}>2023 - ...</span>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="sectionWrapper">
+        <div className="relative flex h-[6rem] w-[32rem] pl-14" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
+          <span className= "absolute title font-bold text-[5.5rem] -top-5">Proficiency</span>
+        </div>
+        <div className="flex gap-8 pt-10 pl-10">
+          <TechCard logo="python.svg" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="java.svg" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="html.svg" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="css.svg" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="javascript.svg" color={{ borderColor: colors.primary }}/>
         </div>
       </div>
     </div>
