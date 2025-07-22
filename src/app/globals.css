@@ -30,3 +30,8 @@ body {
 .content {
   font-family: var(--font-inter);
 }
+
+.sectionWrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
