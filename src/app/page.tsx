@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { colors } from "@/elements/color"
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import TechCard from "@/components/techCard";
 
 export default function Home() {
@@ -92,7 +93,18 @@ export default function Home() {
           <TechCard logo="canva.svg" name="Canva" color={{ borderColor: colors.purple }}/>
           <TechCard logo="figma.svg" name="Figma" color={{ borderColor: colors.purple }}/>
         </div>
+        <div className="flex flex-col my-6 px-10">
+          <div className="flex gap-4 items-center">
+            <div className="w-6 h-6" style={{ backgroundColor: colors.primary }}></div>
+            <span className="content">Programming-related (languages, frameworks, libraries)</span>
+          </div>
+          <div className="flex gap-4 items-center">
+            <div className="w-6 h-6" style={{ backgroundColor: colors.purple }}></div>
+            <span className="content">Other tools</span>
+          </div>
+        </div>
       </div>
+      <Footer/>
     </div>
   );
 }
