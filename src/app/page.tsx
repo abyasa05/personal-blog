@@ -80,12 +80,17 @@ export default function Home() {
         <div className="relative flex h-[6rem] w-[32rem] pl-14" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
           <span className= "absolute title font-bold text-[5.5rem] -top-5">Proficiency</span>
         </div>
-        <div className="flex gap-8 pt-10 pl-10">
-          <TechCard logo="python.svg" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="java.svg" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="html.svg" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="css.svg" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="javascript.svg" color={{ borderColor: colors.primary }}/>
+        <div className="scrollWrapper flex gap-10 py-12 px-10 overflow-x-auto">
+          <TechCard logo="python.svg" name="Python" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="java.svg" name="Java" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="html.svg" name="HTML" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="css.svg" name="CSS" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="javascript.svg" name="JavaScript" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="django.svg" name="Django" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="nextjs.svg" name="NextJS" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="tailwind.svg" name="Tailwind CSS" color={{ borderColor: colors.primary }}/>
+          <TechCard logo="canva.svg" name="Canva" color={{ borderColor: colors.purple }}/>
+          <TechCard logo="figma.svg" name="Figma" color={{ borderColor: colors.purple }}/>
         </div>
       </div>
     </div>

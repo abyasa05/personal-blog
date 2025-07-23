@@ -3,4 +3,5 @@ export const colors = {
     secondary: "#00B0D8",
     baseLight: "#FFFFFF",
     baseDark: "#1E1E1E",
+    purple: "#8924F4"
 }
