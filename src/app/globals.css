@@ -43,3 +43,7 @@ body {
 .scrollWrapper > * {
   scroll-snap-align: start;
 }
+
+.socialLinks:hover {
+  color: #faf202;
+}
