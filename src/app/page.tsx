@@ -36,8 +36,8 @@ export default function Home() {
         </div>
       </div>
       <div className="sectionWrapper">
-        <div className="relative h-[6rem] border-l-60" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
-          <span className="absolute title title-2 font-bold -left-4.5 -top-0.5">Education</span>
+        <div className="relative titleBox ml-12 md:ml-15.5" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
+          <span className="absolute title title-2 font-bold -left-2.5 md:-left-4.5 top-[0.2rem] md:-top-0.5">Education</span>
         </div>
         <div className="flex flex-col md:flex-row gap-10 sidePadding pt-10 justify-center">
           <div className="flex flex-col gap-8 items-center">
@@ -78,8 +78,8 @@ export default function Home() {
         </div>
       </div>
       <div className="sectionWrapper">
-        <div className="relative flex h-[6rem] md:w-[32rem] pl-14" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
-          <span className= "absolute title title-2 font-bold -top-5">Proficiency</span>
+        <div className="relative flex titleBox w-[18.5rem] md:w-[32rem]" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
+          <span className= "absolute title title-2 font-bold -top-2 md:-top-5">Proficiency</span>
         </div>
         <div className="scrollWrapper flex gap-6 md:gap-10 py-12 sidePadding overflow-x-auto">
           <TechCard logo="python.svg" name="Python" color={{ borderColor: colors.primary }}/>
@@ -93,13 +93,13 @@ export default function Home() {
           <TechCard logo="canva.svg" name="Canva" color={{ borderColor: colors.purple }}/>
           <TechCard logo="figma.svg" name="Figma" color={{ borderColor: colors.purple }}/>
         </div>
-        <div className="flex flex-col my-6 sidePadding">
+        <div className="flex flex-col my-6 sidePadding text-[1rem]">
           <div className="flex gap-4 items-center">
-            <div className="w-6 h-6" style={{ backgroundColor: colors.primary }}></div>
+            <div className="min-w-6 h-6" style={{ backgroundColor: colors.primary }}></div>
             <span className="content">Programming-related (languages, frameworks, libraries)</span>
           </div>
           <div className="flex gap-4 items-center">
-            <div className="w-6 h-6" style={{ backgroundColor: colors.purple }}></div>
+            <div className="min-w-6 h-6" style={{ backgroundColor: colors.purple }}></div>
             <span className="content">Other tools</span>
           </div>
         </div>
