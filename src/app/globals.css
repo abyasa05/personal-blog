@@ -25,6 +25,29 @@ body {
 
 .title {
   font-family: var(--font-geist-sans);
+  letter-spacing: 0.05rem;
+}
+
+.title-2 {
+  @media (width >= 48rem) {
+    font-size: 5.5rem;   
+  };
+  
+  @media (width < 48rem) {
+    font-size: 3rem;
+  };
+}
+
+.sidePadding {
+  @media (width >= 48rem) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  };
+  
+  @media (width < 48rem) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  };
 }
 
 .content {
@@ -37,7 +60,14 @@ body {
 
 .scrollWrapper {
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 2.5rem;
+
+  @media (width >= 48rem) {
+    scroll-padding-inline: 2.5rem;
+  };
+
+  @media (width < 48rem) {
+    scroll-padding-inline: 1.5rem;
+  };
 }
 
 .scrollWrapper > * {
