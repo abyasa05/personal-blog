@@ -16,14 +16,10 @@ export default function Home() {
           height={785} 
           className="w-full h-auto min-h-[785px] object-[80%_100%] object-cover"
         />
-        {/* <span className="title font-extrabold text-[8rem] sm:text-[12rem]" style={{ color: colors.baseLight }}>
-          <p className="absolute top-95 -left-3.5">Hello</p>
-          <p className="absolute top-142.5 left-15">There</p>
-        </span> */}
-        <div className="absolute flex flex-col top-[70%] sm:top-[55%] -left-2.5 sm:-left-3.5 title font-extrabold text-[8rem] sm:text-[12rem] leading-none" style={{ color: colors.baseLight }}>
+        <div className="absolute flex flex-col top-[73.5%] sm:top-[62%] md:top-[55%] -left-2 sm:-left-3 md:-left-3.5 title font-extrabold text-[7rem] sm:text-[10rem] md:text-[12rem] leading-none" style={{ color: colors.baseLight }}>
           <p>Hello</p>
           <div className="flex">
-            <div className="h-auto w-[3rem] sm:w-[5rem]"></div>
+            <div className="h-auto w-[3.5rem] sm:w-[5rem] md:w-[6rem]"></div>
             <p>There</p>
           </div>
         </div>
