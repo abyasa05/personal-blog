@@ -15,8 +15,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Abyasa's Blog",
-  description: "Abyasa's personal blog",
+  title: "Abyasa's Website",
+  description: "Abyasa's personal website",
 };
 
 export default function RootLayout({
