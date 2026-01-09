@@ -16,7 +16,7 @@ export default function Home() {
           height={785} 
           className="w-full h-auto min-h-[785px] object-[80%_100%] object-cover"
         />
-        <div className="absolute flex flex-col top-[73.5%] sm:top-[62%] md:top-[55%] -left-2 sm:-left-3 md:-left-3.5 title font-extrabold text-[7rem] sm:text-[10rem] md:text-[12rem] leading-none" style={{ color: colors.baseLight }}>
+        <div className="absolute flex flex-col top-[73.5%] sm:top-[62%] md:top-[55%] -left-2 sm:-left-3 md:-left-3.5 title font-extrabold text-[7rem] sm:text-[10rem] md:text-[12rem] leading-none titleToggleLight">
           <p>Hello</p>
           <div className="flex">
             <div className="h-auto w-[3.5rem] sm:w-[5rem] md:w-[6rem]"></div>
@@ -24,12 +24,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="content text-[1rem] sm:text-[1.1rem] sidePadding py-12 sm:py-20 text-justify max-w-full">
+      <div className="content text-[1rem] sm:text-[1.1rem] sidePadding py-12 sm:py-20 text-justify max-w-full contentToggleLight">
         My name is Muhammad Abyasa Pratama, people used to call me Aby (or Abyasa). I was born on 22 July 2005 in Jakarta, Indonesia. I'm currently enrolling as an undergraduate computer science student at the University of Indonesia. I'm a hard working and curious person who wishes to excel at my field of interests.
       </div>
       <div className="sectionWrapper">
-        <div className="content text-[1rem] sidePadding py-10 text-justify relative" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
-          <div className="absolute title title-2 font-bold pl-5 sm:pl-4 -top-13 sm:-top-24" style={{ color: colors.primary }}>Interest</div>
+        <div className="content text-[1rem] sidePadding py-10 text-justify relative bg-primary text-baseLight">
+          <div className="absolute title title-2 font-bold pl-5 sm:pl-4 -top-13 sm:-top-24 text-primary">Interest</div>
           <p>
             As of now, I'm mainly into the field of front-end development and UI/UX design, but this is subjected to change. Let me tell you, I used to be a person who has quite a fascination with design and aesthetics. Now, since I've decided to dive into the world of IT, I want to use this interest to get more understanding about what builds up a good user interface design. I know that the field of UI/UX design is way more complicated than just about aesthetics, but I'm sure interested to master every part of it. 
           </p>
@@ -39,10 +39,10 @@ export default function Home() {
         </div>
       </div>
       <div className="sectionWrapper">
-        <div className="relative titleBox ml-12 sm:ml-15.5" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
+        <div className="relative titleBox ml-12 sm:ml-15.5 bg-primary titleToggleLight">
           <span className="absolute title title-2 font-bold -left-2.5 sm:-left-4.5 top-[0.2rem] sm:-top-0.5">Education</span>
         </div>
-        <div className="flex flex-col sm:flex-row gap-10 sidePadding pt-10 justify-center">
+        <div className="flex flex-col sm:flex-row gap-10 sidePadding pt-10 justify-center contentToggleLight">
           <div className="flex flex-col gap-8 items-center">
             <div className="h-40 sm:h-50 w-auto">
               <Image 
@@ -59,9 +59,9 @@ export default function Home() {
             </div>
           </div>
           <div id="connectLine" className="flex flex-col sm:flex-row gap-0 sm:h-50 items-center">
-            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: colors.primary }}></div>
-            <div className="w-0.5 h-12 sm:w-12 sm:h-0.5" style={{ backgroundColor: colors.primary }}></div>
-            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: colors.primary }}></div>
+            <div className="w-2 h-2 rounded-full bg-primary"></div>
+            <div className="w-0.5 h-12 sm:w-12 sm:h-0.5 bg-primary"></div>
+            <div className="w-2 h-2 rounded-full bg-primary"></div>
           </div>
           <div className="flex flex-col gap-8 items-center">
             <div className="h-40 sm:h-50 w-auto">
@@ -81,29 +81,29 @@ export default function Home() {
         </div>
       </div>
       <div className="sectionWrapper">
-        <div className="relative flex titleBox w-[18.5rem] sm:w-[32rem]" style={{ backgroundColor: colors.primary, color: colors.baseLight }}>
+        <div className="relative flex titleBox w-[18.5rem] sm:w-[32rem] bg-primary titleToggleLight">
           <span className= "absolute title title-2 font-bold -top-2 sm:-top-5">Proficiency</span>
         </div>
         <div className="scrollWrapper flex gap-6 md:gap-10 py-12 px-6 md:px-10 overflow-x-auto">
-          <TechCard logo="python.svg" name="Python" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="java.svg" name="Java" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="html.svg" name="HTML" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="css.svg" name="CSS" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="javascript.svg" name="JavaScript" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="django.svg" name="Django" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="nextjs.svg" name="NextJS" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="tailwind.svg" name="Tailwind CSS" color={{ borderColor: colors.primary }}/>
-          <TechCard logo="canva.svg" name="Canva" color={{ borderColor: colors.purple }}/>
-          <TechCard logo="figma.svg" name="Figma" color={{ borderColor: colors.purple }}/>
+          <TechCard logo="python.svg" name="Python" color="primary"/>
+          <TechCard logo="java.svg" name="Java" color="primary"/>
+          <TechCard logo="html.svg" name="HTML" color="primary"/>
+          <TechCard logo="css.svg" name="CSS" color="primary"/>
+          <TechCard logo="javascript.svg" name="JavaScript" color="primary"/>
+          <TechCard logo="django.svg" name="Django" color="primary"/>
+          <TechCard logo="nextjs.svg" name="NextJS" color="primary"/>
+          <TechCard logo="tailwind.svg" name="Tailwind CSS" color="primary"/>
+          <TechCard logo="canva.svg" name="Canva" color="purple"/>
+          <TechCard logo="figma.svg" name="Figma" color="purple"/>
         </div>
         <div className="flex flex-col my-6 sidePadding text-[1rem]">
           <div className="flex gap-4 items-center">
-            <div className="min-w-6 h-6" style={{ backgroundColor: colors.primary }}></div>
-            <span className="content">Programming-related (languages, frameworks, libraries)</span>
+            <div className="min-w-6 h-6 bg-primary"></div>
+            <span className="content contentToggleLight">Programming-related (languages, frameworks, libraries)</span>
           </div>
           <div className="flex gap-4 items-center">
-            <div className="min-w-6 h-6" style={{ backgroundColor: colors.purple }}></div>
-            <span className="content">Other tools</span>
+            <div className="min-w-6 h-6 bg-purple"></div>
+            <span className="content contentToggleLight">Other tools</span>
           </div>
         </div>
       </div>
