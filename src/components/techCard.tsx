@@ -21,7 +21,6 @@ export default function TechCard( {logo, name, color}: CardProps ) {
                     className="bg-no-repeat bg-contain bg-center w-full h-full"
                 ></div>
             </div>
-            <section className="content text-xl" style={{ color: colors.baseDark, opacity: 0.8 }}>{name}</section>
         </div>
     )
 }

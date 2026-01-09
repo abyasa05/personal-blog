@@ -35,7 +35,7 @@ export default function RootLayout({
           referrerPolicy="no-referrer" />
       </head>
       <body
-        className={`${geistSans.variable} ${inter.variable} antialiased dark bgToggleLight`}
+        className={`${geistSans.variable} ${inter.variable} antialiased bgToggleLight`}
       >
         {children}
       </body>

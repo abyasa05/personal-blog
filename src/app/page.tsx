@@ -28,7 +28,7 @@ export default function Home() {
         My name is Muhammad Abyasa Pratama, people used to call me Aby (or Abyasa). I was born on 22 July 2005 in Jakarta, Indonesia. I'm currently enrolling as an undergraduate computer science student at the University of Indonesia. I'm a hard working and curious person who wishes to excel at my field of interests.
       </div>
       <div className="sectionWrapper">
-        <div className="content text-[1rem] sidePadding py-10 text-justify relative bg-primary text-baseLight">
+        <div className="content text-[1rem] sidePadding py-10 text-justify relative linear-bg contentToggleLight">
           <div className="absolute title title-2 font-bold pl-5 sm:pl-4 -top-13 sm:-top-24 text-primary">Interest</div>
           <p>
             As of now, I'm mainly into the field of front-end development and UI/UX design, but this is subjected to change. Let me tell you, I used to be a person who has quite a fascination with design and aesthetics. Now, since I've decided to dive into the world of IT, I want to use this interest to get more understanding about what builds up a good user interface design. I know that the field of UI/UX design is way more complicated than just about aesthetics, but I'm sure interested to master every part of it. 
