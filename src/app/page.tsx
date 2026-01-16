@@ -5,6 +5,19 @@ import Footer from "@/components/footer";
 import TechCard from "@/components/techCard";
 
 export default function Home() {
+  const techStack = [
+    { logo: "python.svg", color: "primary"},
+    { logo: "java.svg", color: "primary"},
+    { logo: "html.svg", color: "primary"},
+    { logo: "css.svg", color: "primary"},
+    { logo: "javascript.svg", color: "primary"},
+    { logo: "django.svg", color: "primary"},
+    { logo: "nextjs.svg", color: "primary"},
+    { logo: "tailwind.svg", color: "primary"},
+    { logo: "canva.svg", color: "purple"},
+    { logo: "figma.svg", color: "purple"},
+  ]
+
   return (
     <div>
       <Navbar/>
@@ -55,7 +68,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-2 w-[11rem] content text-center">
               <span className="font-semibold text-center">SMAN 28 Jakarta</span>
-              <span style={{ opacity: 0.6 }}>2020 - 2023</span>
+              <span style={{ opacity: 0.7 }}>2020 - 2023</span>
             </div>
           </div>
           <div id="connectLine" className="flex flex-col sm:flex-row gap-0 sm:h-50 items-center">
@@ -75,7 +88,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-2 w-[11rem] content text-center">
               <div className="font-semibold text-center">Faculty of Computer Science, University of Indonesia</div>
-              <span style={{ opacity: 0.6 }}>2023 - ...</span>
+              <span style={{ opacity: 0.7 }}>2023 - ...</span>
             </div>
           </div>
         </div>
@@ -85,16 +98,9 @@ export default function Home() {
           <span className= "absolute title title-2 font-bold -top-2 sm:-top-5">Proficiency</span>
         </div>
         <div className="scrollWrapper flex gap-6 md:gap-10 py-12 px-6 md:px-10 overflow-x-auto">
-          <TechCard logo="python.svg" name="Python" color="primary"/>
-          <TechCard logo="java.svg" name="Java" color="primary"/>
-          <TechCard logo="html.svg" name="HTML" color="primary"/>
-          <TechCard logo="css.svg" name="CSS" color="primary"/>
-          <TechCard logo="javascript.svg" name="JavaScript" color="primary"/>
-          <TechCard logo="django.svg" name="Django" color="primary"/>
-          <TechCard logo="nextjs.svg" name="NextJS" color="primary"/>
-          <TechCard logo="tailwind.svg" name="Tailwind CSS" color="primary"/>
-          <TechCard logo="canva.svg" name="Canva" color="purple"/>
-          <TechCard logo="figma.svg" name="Figma" color="purple"/>
+          {techStack.map((card) => (
+            <TechCard key={card.logo} logo={card.logo} color={card.color}/>
+          ))}
         </div>
         <div className="flex flex-col my-6 sidePadding text-[1rem]">
           <div className="flex gap-4 items-center">

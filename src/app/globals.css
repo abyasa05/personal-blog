@@ -89,6 +89,10 @@ body {
   };
 }
 
+.scrollWrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .scrollWrapper > * {
   scroll-snap-align: start;
 }
