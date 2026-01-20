@@ -20,7 +20,7 @@ export default function Home() {
     <div>
       <div className="relative overflow-hidden">
         <Image
-          src='/image/home_image.jpg' 
+          src='/image/home_image.jpeg' 
           alt='Home Image of Aby' 
           width={1376} 
           height={785} 
