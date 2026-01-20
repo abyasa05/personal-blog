@@ -65,7 +65,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-2 w-[11rem] content text-center">
               <span className="font-semibold text-center">SMAN 28 Jakarta</span>
-              <span style={{ opacity: 0.7 }}>2020 - 2023</span>
+              <span style={{ opacity: 0.8 }}>2020 - 2023</span>
             </div>
           </div>
           <div id="connectLine" className="flex flex-col sm:flex-row gap-0 sm:h-50 items-center">
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-2 w-[11rem] content text-center">
               <div className="font-semibold text-center">Faculty of Computer Science, University of Indonesia</div>
-              <span style={{ opacity: 0.7 }}>2023 - ...</span>
+              <span style={{ opacity: 0.8 }}>2023 - ...</span>
             </div>
           </div>
         </div>
