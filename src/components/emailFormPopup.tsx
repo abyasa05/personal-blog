@@ -35,7 +35,7 @@ export default function Popup() {
   }
 
   return (
-    <div>
+    <div className='content'>
       {/* POP-UP BUTTON */}
       <button id='btnMail' onClick={togglePopup}>
         <div className="flex h-14">

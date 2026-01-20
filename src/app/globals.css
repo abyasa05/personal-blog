@@ -149,5 +149,5 @@ form input, form textarea {
 }
 
 .formField {
-  @apply flex flex-col 
+  @apply flex flex-col gap-1
 }
