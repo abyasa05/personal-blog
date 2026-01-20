@@ -1,6 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { SunIcon } from '@heroicons/react/24/outline'
+import { MoonIcon } from '@heroicons/react/24/solid'
 
 export default function DarkModeToggle() {
     const [darkTheme, setDark] = useState(false);
@@ -29,9 +31,7 @@ export default function DarkModeToggle() {
     return (
         <div className={`w-[2.5rem] h-[2.5rem] flex justify-center-safe items-center-safe border-2 border-primary 
             ${darkTheme ? 'bg-primary text-baseDark' : 'text-primary'}`} onClick={toggleDark}>
-            <div className={`text-[1.5rem]`}>
-                <i className={`${darkTheme ? 'fa-solid fa-sun' : 'fa-solid fa-moon'}`}></i>
-            </div>
+            {darkTheme ? <MoonIcon className="size-[1.8rem]"/> : <SunIcon className="size-[1.8rem]"/>}
         </div>
     )
 }

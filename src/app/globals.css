@@ -114,7 +114,40 @@ body {
 }
 
 .linear-bg {
-  background: linear-gradient(
-    to bottom, #00BF99FF, #00BF9900
-  );
+  @apply bg-linear-to-b from-primary/100 to-primary/0
+}
+
+#btnMailText {
+  position: relative;
+  z-index: 1;
+}
+
+#btnMailText::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--color-tosca);
+  transition: 0.2s ease-out;
+  z-index: -1;
+}
+
+#btnMail:hover {
+  #btnMailText::before {
+    width: 100%;
+  }
+}
+
+form label, form button {
+  @apply font-semibold
+}
+
+form input, form textarea {
+  @apply border border-baseDark/50 dark:border-baseLight/50 px-2 py-2
+}
+
+.formField {
+  @apply flex flex-col 
 }

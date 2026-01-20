@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { colors } from "@/elements/color"
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import TechCard from "@/components/techCard";
+import Popup from "@/components/emailFormPopup";
 
 export default function Home() {
   const techStack = [
@@ -20,7 +18,6 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar/>
       <div className="relative overflow-hidden">
         <Image
           src='/image/home_image.jpg' 
@@ -113,7 +110,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer/>
+      {/* POP-UP BUTTON */}
+      <div className="sectionWrapper flex justify-center">
+        <Popup/>
+      </div>
     </div>
   );
 }

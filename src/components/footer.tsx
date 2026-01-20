@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { colors } from "@/elements/color"
 
 export default function Footer() {
     return (
