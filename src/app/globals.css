@@ -151,3 +151,16 @@ form input, form textarea {
 .formField {
   @apply flex flex-col gap-1
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
+.mobileNav > a {
+  @apply w-full text-center py-4
+}
+
+.mobileNav > a:nth-child(odd) {
+  @apply bg-baseDark/5 dark:bg-black/30
+}

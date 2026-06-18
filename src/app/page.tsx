@@ -37,9 +37,12 @@ export default function Home() {
       <div className="content text-[1rem] sm:text-[1.1rem] sidePadding py-12 sm:py-20 text-justify max-w-full contentToggleLight">
         My name is Muhammad Abyasa Pratama, people used to call me Aby (or Abyasa). I was born on 22 July 2005 in Jakarta, Indonesia. I'm currently enrolling as an undergraduate computer science student at the University of Indonesia. I'm a hard working and curious person who wishes to excel at my field of interests.
       </div>
-      <div className="sectionWrapper">
+      <div id='interest' className="sectionWrapper flex flex-col">
+        <div className="mb-[-1.2rem] sm:mb-[-2.2rem] pl-11 sm:pl-14">
+          <span className="title title-2 font-bold bottom text-primary">Interest</span>
+        </div>
         <div className="content text-[1rem] sidePadding py-10 text-justify relative linear-bg contentToggleLight">
-          <div className="absolute title title-2 font-bold pl-5 sm:pl-4 -top-13 sm:-top-24 text-primary">Interest</div>
+          {/* <div className="absolute title title-2 font-bold pl-5 sm:pl-4 -top-13 sm:-top-24 text-primary">Interest</div> */}
           <p>
             As of now, I'm mainly into the field of front-end development and UI/UX design, but this is subjected to change. Let me tell you, I used to be a person who has quite a fascination with design and aesthetics. Now, since I've decided to dive into the world of IT, I want to use this interest to get more understanding about what builds up a good user interface design. I know that the field of UI/UX design is way more complicated than just about aesthetics, but I'm sure interested to master every part of it. 
           </p>
@@ -48,7 +51,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="sectionWrapper">
+      <div id='education' className="sectionWrapper">
         <div className="relative titleBox ml-12 sm:ml-15.5 bg-primary titleToggleLight">
           <span className="absolute title title-2 font-bold -left-2.5 sm:-left-4.5 top-[0.2rem] sm:-top-0.5">Education</span>
         </div>
@@ -90,7 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sectionWrapper">
+      <div id='proficiency' className="sectionWrapper">
         <div className="relative flex titleBox w-[18.5rem] sm:w-[32rem] bg-primary titleToggleLight">
           <span className= "absolute title title-2 font-bold -top-2 sm:-top-5">Proficiency</span>
         </div>
