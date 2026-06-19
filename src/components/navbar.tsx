@@ -19,13 +19,17 @@ export default function Navbar() {
         }
     }, [isMobileOpen])
 
+    const toggleMobileNav = () => {
+        setIsMobileOpen(!isMobileOpen);
+    }
+ 
     return (
         <>
             <nav className="fixed w-full top-0 z-50 bgToggleLight flex flex-col">
                 <div className="flex items-center justify-between sidePadding py-[1rem]">
                     <button
                         className="sm:hidden size-[2.5rem] text-primary"
-                        onClick={() => setIsMobileOpen(!isMobileOpen)}
+                        onClick={toggleMobileNav}
                     >
                         { isMobileOpen ? <XMarkIcon/> : <Bars3Icon/> }
                     </button>
@@ -40,19 +44,19 @@ export default function Navbar() {
                     <div className="mobileNav sm:hidden flex flex-col items-center content text-primary">
                         <a
                             href="#interest" 
-                            onClick={() => setIsMobileOpen(!isMobileOpen)}
+                            onClick={toggleMobileNav}
                         >
                             Interest
                         </a>
                         <a
                             href="#education" 
-                            onClick={() => setIsMobileOpen(!isMobileOpen)}
+                            onClick={toggleMobileNav}
                         >
                             Education
                         </a>
                         <a
                             href="#proficiency" 
-                            onClick={() => setIsMobileOpen(!isMobileOpen)}
+                            onClick={toggleMobileNav}
                         >
                             Proficiency
                         </a>
@@ -60,7 +64,10 @@ export default function Navbar() {
                 )}
             </nav>
             { isMobileOpen && (
-                <div className="sm:hidden fixed w-screen h-screen bg-baseDark/50 dark:bg-baseLight/20 z-40"></div>
+                <div 
+                    className="sm:hidden fixed w-screen h-screen bg-baseDark/50 dark:bg-baseLight/20 z-40"
+                    onClick={toggleMobileNav}
+                ></div>
             ) }
         </>
     )
